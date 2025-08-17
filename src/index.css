@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.header-main {
+  @apply bg-gray-950 text-violet-300
+}
+
+.header-brand-ico {
+  @apply w-12
+}
