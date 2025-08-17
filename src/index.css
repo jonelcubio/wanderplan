@@ -2,6 +2,7 @@
 
 .header-main {
   @apply bg-gray-950 text-violet-300 py-2.5 px-10 flex items-center gap-2.5;
+  @apply fixed top-0 left-0 right-0 z-50;
 }
 
 .header-brand-ico {
@@ -27,4 +28,20 @@
 .header-nav-li {
   @apply cursor-pointer hover:border-b-2 border-violet-300 hover:font-semibold;
   @apply transition duration-75 ease-in active:opacity-50;
+}
+
+.hero-main {
+  @apply bg-gray-950 text-violet-300 pt-30 px-10;
+}
+
+.hero-title-con {
+  @apply text-center;
+}
+
+.hero-title {
+  @apply text-4xl font-bold pb-4;
+}
+
+.hero-text {
+  @apply flex flex-wrap text-center justify-center;
 }
