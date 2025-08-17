@@ -14,7 +14,7 @@
 }
 
 .header-space {
-  @apply w-160;
+  @apply w-140;
 }
 
 .header-brand-name {
@@ -28,6 +28,10 @@
 .header-nav-li {
   @apply cursor-pointer hover:border-b-2 border-violet-300 hover:font-semibold;
   @apply transition duration-75 ease-in active:opacity-50;
+}
+
+.header-nav-github-ico {
+  @apply w-10 cursor-pointer active:opacity-50 hover:opacity-70;
 }
 
 .hero-main {
