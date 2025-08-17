@@ -1,9 +1,30 @@
 @import "tailwindcss";
 
 .header-main {
-  @apply bg-gray-950 text-violet-300
+  @apply bg-gray-950 text-violet-300 py-2.5 px-10 flex items-center gap-2.5;
 }
 
 .header-brand-ico {
-  @apply w-12
+  @apply w-12 cursor-pointer active:opacity-50;
+}
+
+.header-brand-con {
+  @apply flex items-center gap-2;
+}
+
+.header-space {
+  @apply w-160;
+}
+
+.header-brand-name {
+   @apply text-xl font-semibold cursor-pointer active:opacity-50;
+}
+
+.header-nav-con div {
+   @apply flex items-center flex-row gap-15 text-sm;
+}
+
+.header-nav-li {
+  @apply cursor-pointer hover:border-b-2 border-violet-300 hover:font-semibold;
+  @apply transition duration-75 ease-in active:opacity-50;
 }
