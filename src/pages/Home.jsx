@@ -3,10 +3,11 @@ import Hero from "../components/Hero";
 import HeroStats from "../components/HeroStats";
 import PlanButton from "../components/PlanButton";
 import ViewBudgetButton from "../components/ViewBudgetButton";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return(
-    <>
+    <main className="home-main">
       <Header />
       <Hero />
       <HeroStats />
@@ -15,7 +16,9 @@ export default function Home() {
         <PlanButton />
         <ViewBudgetButton />
       </div>
+
+      <Footer />
      
-    </>
+    </main>
   );
 }
