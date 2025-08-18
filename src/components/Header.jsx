@@ -16,7 +16,7 @@ export default function Header() {
       <div className="header-nav-con">
         <div>
           <Link to="/"><div className="header-nav-li" title="Home">Home</div></Link>
-          <div className="header-nav-li" title="Trip Planner">Trip Planner</div>
+          <Link to="/trip"><div className="header-nav-li" title="Trip Planner">Trip Planner</div></Link>
           <div className="header-nav-li" title="Budget">Budget</div>
           <div className="header-nav-li" title="Map">Map</div>
           <div className="header-nav-li" title="Settings">Settings</div>

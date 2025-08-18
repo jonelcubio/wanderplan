@@ -1,6 +1,4 @@
 export default function Hero() {
-
-  console.log('Hero loaded!')
   return(
     <main className="hero-main">
       <div className="hero-title-con">
