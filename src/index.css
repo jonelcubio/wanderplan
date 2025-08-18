@@ -9,7 +9,7 @@
   @apply fixed top-0 left-0 right-0 z-50;
 }
 
-.header-brand-ico, .footer-brand-ico {
+.header-brand-ico, .footer-brand-ico, .header-menu-ico {
   @apply w-12 cursor-pointer active:opacity-50;
 }
 
@@ -27,6 +27,7 @@
 
 .header-nav-con div {
    @apply flex items-center flex-row gap-15 text-sm;
+   @apply absolute md:static right-0 top-0 md:w-auto bg-violet-950 md:bg-transparent shadow-md md:shadow-none transition-all duration-200 ease-in;
 }
 
 .header-nav-li {
@@ -36,6 +37,10 @@
 
 .header-nav-github-ico {
   @apply w-10 cursor-pointer active:opacity-50 hover:opacity-70;
+}
+
+.header-menu-con {
+  @apply md:hidden block focus:outline-none;
 }
 
 .hero-main {

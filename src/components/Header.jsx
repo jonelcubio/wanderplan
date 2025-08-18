@@ -1,8 +1,13 @@
+import { useState } from "react";
 import ico from "../assets/ico.png";
+import close from "../assets/close.svg";
+import menu from "../assets/menu.svg";
 import github from "../assets/github.png";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return(
     <main className="header-main">
 
@@ -13,8 +18,16 @@ export default function Header() {
 
       <div className="header-space"></div>
 
-      <div className="header-nav-con">
+      <button className="header-menu-con" 
+      onClick={() => setIsOpen(!isOpen)}>
+        <img src={isOpen ? close : menu} alt="Menu" className="header-menu-ico" />
+      </button>
+
+      {/* Mobile View Menu*/}
+      <div className={`absolute md:static top-14 left-0 w-full md:w-auto bg-gray-950 md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ease-in px-2.5 py-2.5
+          ${isOpen ? "block" : "hidden md:block"}`}>
         <div>
+          
           <Link to="/"><div className="header-nav-li" title="Home">Home</div></Link>
           <Link to="/trip"><div className="header-nav-li" title="Trip Planner">Trip Planner</div></Link>
           <div className="header-nav-li" title="Budget">Budget</div>
