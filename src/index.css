@@ -6,7 +6,7 @@
 
 .header-main {
   @apply bg-gray-950 text-violet-300 py-2.5 px-10 flex items-center gap-2.5;
-  @apply fixed top-0 left-0 right-0 z-50;
+  @apply fixed top-0 left-0 right-0 z-50 shadow-lg border-b-1 border-violet-400;
 }
 
 .header-brand-ico, .footer-brand-ico, .header-menu-ico {
@@ -48,7 +48,7 @@
 }
 
 .hero-title-con {
-  @apply text-center;
+  @apply text-center py-5;
 }
 
 .hero-title {
@@ -76,15 +76,15 @@
 }
 
 .herostats-title {
-  @apply text-violet-200 text-sm;
+  @apply text-sm text-violet-200;
 }
 
 .herostats-destination-li, .herostats-active-li, .herostats-budget-li {
-  @apply border-1 border-violet-300 rounded-lg text-center p-2 w-50;;
+  @apply border-1 border-violet-300 rounded-lg text-center p-2 w-50 sm:w-60 sm:gap-2.5; 
 }
 
 .planbutton-main, .viewbudgetbtn-main {
-  @apply flex items-center gap-2.5 bg-violet-950 font-semibold py-2.5 px-2.5 w-40 rounded-lg cursor-pointer active:opacity-50 hover:bg-violet-800;
+  @apply flex items-center gap-2.5 bg-violet-950 font-semibold py-2.5 px-2.5 w-40 rounded-lg cursor-pointer active:opacity-50 hover:bg-violet-800 my-5;
 }
 
 .viewbudgetbtn-main {
@@ -100,7 +100,7 @@
 }
 
 .footer-main {
-  @apply bg-gray-950 text-violet-300 pt-25 px-10 flex items-center gap-2.5;
+  @apply bg-gray-950 text-violet-300 pt-7 flex items-center gap-2.5 border-t-1 border-violet-400;
 }
 
 .footer-brand-con {
@@ -111,14 +111,10 @@
   @apply font-semibold
 }
 
-.footer-space {
-  @apply w-230
-}
-
 .home-main {
   @apply bg-gray-950 text-violet-300
 }
 
 .footer-nav-notes {
-  @apply italic;
+  @apply italic mx-auto;
 }
