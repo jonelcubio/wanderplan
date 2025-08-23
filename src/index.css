@@ -68,7 +68,7 @@
 }
 
 .herostats-con {
-  @apply flex flex-row justify-center items-center gap-20;
+  @apply flex flex-row justify-center items-center  gap-10 lg:gap-20;
 }
 
 .count {
