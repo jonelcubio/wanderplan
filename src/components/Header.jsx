@@ -4,6 +4,7 @@ import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import github from "../assets/github.png";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
 
       <Link to="/"><div className="header-brand-con">
         <img src={ico} alt="Wanderplan" className="header-brand-ico" />
-        <div className="header-brand-name">Wanderplan</div>
+        <motion.div initial={{scale:0}} animate={{scale:1}} className="header-brand-name">Wanderplan</motion.div>
       </div></Link>
 
       <div className="header-space"></div>
