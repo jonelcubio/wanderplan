@@ -118,3 +118,23 @@
 .footer-nav-notes {
   @apply italic mx-auto;
 }
+
+.trip-overview-main {
+   @apply bg-gray-950 text-violet-300 py-30 px-10;
+}
+
+.trip-overview-title {
+  @apply lg:text-2xl sm:text-xl font-semibold;
+}
+
+.trip-overview-con {
+  @apply text-violet-300 flex flex-row text-center  items-center pt-10 gap-2.5;
+}
+
+.trip-trip-input {
+  @apply border-1 border-b-violet-300 rounded-lg focus:outline-none px-2 py-2 w-100;
+}
+
+.trip-trip-input::placeholder {
+  @apply px-2 py-2;
+}

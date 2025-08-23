@@ -37,7 +37,7 @@ export default function Header() {
           <Link to="/trip"><div className="header-nav-li" title="Trip Planner">Trip Planner</div></Link>
           <div className="header-nav-li" title="Budget">Budget</div>
           <div className="header-nav-li" title="Map">Map</div>
-          <div className="header-nav-li" title="Settings">Settings</div>
+          <div className="header-nav-li" title="Profile/Login">Profile/Login</div>
           <div className="header-nav-github">
             <Link to="https://github.com/jonelcubio/wanderplan"><img src={github} target="_blank" rel="noopener noreferrer" alt="Github" className="header-nav-github-ico" title="Visit the Github Repo"/></Link>
           </div>
