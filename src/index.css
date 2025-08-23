@@ -124,17 +124,21 @@
 }
 
 .trip-overview-title {
-  @apply lg:text-2xl sm:text-xl font-semibold;
+  @apply lg:text-2xl sm:text-xl font-semibold pb-5;
 }
 
 .trip-overview-con {
-  @apply text-violet-300 flex flex-row text-center  items-center pt-10 gap-2.5;
+  @apply text-violet-300 flex flex-row text-center  items-center py-2.5 gap-2.5;
 }
 
-.trip-trip-input {
-  @apply border-1 border-b-violet-300 rounded-lg focus:outline-none px-2 py-2 w-100;
+.trip-trip-input, .trip-destination-input {
+  @apply focus:outline-none px-2 py-2 w-100 border-b-1 border-violet-300;
 }
 
-.trip-trip-input::placeholder {
-  @apply px-2 py-2;
+.trip-dates-start-input::-webkit-calendar-picker-indicator, .trip-dates-end-input::-webkit-calendar-picker-indicator{
+  background-color: #c4b5fd;
+}
+
+.trip-dates-start-input, .trip-dates-end-input {
+  @apply border-b-1 border-violet-300;
 }
