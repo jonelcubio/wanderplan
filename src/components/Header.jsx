@@ -24,10 +24,14 @@ export default function Header() {
       </button>
 
       {/* Mobile View Menu*/}
-      <div className={`absolute md:static top-14 left-0 w-full md:w-auto bg-gray-950 md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ease-in px-2.5 py-2.5
-          ${isOpen ? "block" : "hidden md:block"}`}>
-        <div>
-          
+      {/* So, dapat visible si Menu pag mobile pero hidden sa lg*/}
+      {/* Dahil outer div to, block lang sya*/}
+      <div className={`absolute sm:static top-14 left-0 w-full sm:w-auto bg-gray-950 md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ease-in px-12 py-3
+          ${isOpen ? "block lg:hidden" : "hidden lg:block"}`}>
+            
+         {/* Nga naman, nasa loob kasi to kaya di nakikita.*/}   
+        <div className="flex flex-row justify-center items-center gap-5 text-base">
+
           <Link to="/"><div className="header-nav-li" title="Home">Home</div></Link>
           <Link to="/trip"><div className="header-nav-li" title="Trip Planner">Trip Planner</div></Link>
           <div className="header-nav-li" title="Budget">Budget</div>
